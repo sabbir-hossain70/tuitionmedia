@@ -1,0 +1,44 @@
+*{
+    box-sizing:border-box;
+    flex:content;
+}
+div{
+    background-color: rgb(215, 241, 239);
+   
+    margin-left: 20%;
+    margin-right: 20%;
+}
+form{
+    padding: 5%;
+    border-radius: 10%;
+
+}
+#regform{
+    border-radius: 10%;
+}
+label{
+    display:block;
+    font-size: 30px;
+}
+input{
+    width: 100%;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(155, 140, 159);
+    font-size: 130%;
+    display: block;
+}
+input[type="submit"]{
+    background: rgb(91, 126, 207);
+    border: 1px solid aqua;
+    width: 60%;
+    font-size: 25px;
+    margin-left:20%;
+    margin-right: 20%;
+    margin-top:10%;
+}
+input[type="submit"]:hover{
+    background: rgb(47, 0, 255);
+    border: 1px solid rgb(70, 15, 166);
+    transition: 0.7s;
+}

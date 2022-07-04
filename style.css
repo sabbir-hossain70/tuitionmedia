@@ -1,0 +1,43 @@
+
+*{
+    box-sizing: border-box;
+    background-color: grey;
+}
+
+ul{
+    margin:0;padding:0;list-style: none;
+    text-align:center;
+}
+li{
+    display: inline-block;
+    margin-right: 0px;
+    position: relative;
+}
+
+a{
+    background: blueviolet;
+    color:aliceblue;
+    padding: 10px 25px;
+    display: block;
+    text-decoration: none;
+    border-radius: 5px;
+}
+a:hover{
+    background: rgb(29, 125, 189);
+}
+
+ul ul{
+    position:absolute; left: -99999px; top:37px; width: 200px;
+    text-align: left;
+}
+ul ul a{
+    border-radius: 0;
+    background:#08b625;
+    border-bottom: 1px solid #ddd;
+}
+ul li:hover ul{
+    left:0;
+}
+li li{
+    display: block;
+}

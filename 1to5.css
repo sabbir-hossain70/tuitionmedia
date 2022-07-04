@@ -1,0 +1,25 @@
+*{
+    font-size: 140%;
+    background: aquamarine;
+    box-sizing: border-box;
+}
+p{
+    color:rgb(132, 0, 255);
+}
+h1{
+    text-align: center;
+    font-size: 75px;
+}
+#primaryTeachers{
+    font-size: 20px;
+    display:flex;
+    padding:3px;
+}
+#primaryTeachers div{
+    padding:3px;
+}
+#primaryTeachers div p{
+    color:black;
+    background-color: yellow;
+    padding:3px;
+}
