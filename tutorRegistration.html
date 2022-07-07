@@ -15,27 +15,27 @@
         <form action="regconfirmed.php" method="post" target="_blank" >
             <label>নাম</label>
             <input type="text" name="name"
-            placeholder="Enter Your Name">
+            placeholder="Enter Your Name" required>
             <label>ইমেইল</label>
             <input type="email" name="email"
-            placeholder="Please enter your email">
+            placeholder="Please enter your email" required>
             <label>মোবাইল নম্বর</label>
             <input type="text" name="phone"
-            placeholder="Enter your phone no">
+            placeholder="Enter your phone no" required>
             <br>  
 
             <label>কোন ক্লাসের শিক্ষক হিসেবে রেজিস্ট্রেশন করতে চান? </label><br><br>
-            <input type="radio" id="1o5" name="class" value="1to5">
-            <label for="1to5">প্রথম - পঞ্চম শ্রেণী</label><br>
-            <input type="radio" id="6to8" name="class" value="6to8">
-            <label for="6to8">ষষ্ঠ - অষ্টম শ্রেণী</label><br>
-            <input type="radio" id="9to10" name="class" value="9to10">
-            <label for="9to10">নবম -দশম শ্রেণী</label><br>
-            <input type="radio" id="11to12" name="class" value="11to12">
-            <label for="11to12">একাদশ - দ্বাদশ শ্রেণী</label><br>
+            <select>
+                <option value="0">প্রথম - পঞ্চম শ্রেণী</option>
+                <option value="1">ষষ্ঠ - অষ্টম শ্রেণী</option>
+                <option value="2">নবম -দশম শ্রেণী</option>
+                <option value="3">একাদশ - দ্বাদশ শ্রেণী</option>
+               
+            </select><br><br>
             <label>কোন বিষয়গুলো পড়াতে চান?</label>
-            <input type="text" name="subjects" placeholder="Enter the name of subjects">
-            
+            <input type="text" name="subjects" placeholder="Enter the name of subjects" required>
+
+
             <input type="submit" value="submit" >
         </form>
     </div>
