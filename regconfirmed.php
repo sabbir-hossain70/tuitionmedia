@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title></head>
     <body>
-        <h1>Congratulations!!!</h1>
-        <br>
-        <h2>You have been successfully registered as a tutor</h2>
+    Welcome <?php echo $_POST["name"]; ?><br>
+    Your email address is: <?php echo $_POST["email"]; ?><br>
+    Your phone no is: <?php echo $_POST["phone"]; ?><br>
+
+    You have been successfully registered as a teacher.
     </body>
 </html>
