@@ -1,25 +1,38 @@
-*{
-    font-size: 140%;
-    background: aquamarine;
-    box-sizing: border-box;
+body{
+    background-color: cadetblue;
 }
-p{
-    color:rgb(132, 0, 255);
+
+table{
+    border:1px solid black;
+    border-collapse: collapse;
+    width: 90%;
+    margin-left:5%
 }
-h1{
+th{
+    border:1px solid red;
+    font-size:25px;
+    background-color:black;
+    color: white;
+    padding:5px;
+}
+tr td{
+    border:1px solid red;
     text-align: center;
-    font-size: 75px;
+    padding: 2px;
+    font-size: 25px;
 }
-#primaryTeachers{
-    font-size: 20px;
-    display:flex;
-    padding:3px;
+tr:nth-child(odd){
+    background-color: aquamarine;
 }
-#primaryTeachers div{
-    padding:3px;
+tr:nth-child(even){
+    background-color: azure;
 }
-#primaryTeachers div p{
-    color:black;
-    background-color: yellow;
-    padding:3px;
+
+h1{
+    background-color: crimson;
+    margin-left: 20%;
+    color:white;
+    border-radius: 5px;
+    text-align: center;
+    width:60%;
 }
