@@ -27,8 +27,6 @@
                     <td><?php echo $info['subjects']?></td>
                     <td><?php echo $info['phone']?></td>
                 </tr>
-
-
                 <?php
             }
             ?>
