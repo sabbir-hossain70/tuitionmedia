@@ -22,10 +22,9 @@ if(!isset($_SESSION['user_name'])){
 <div class="container">
     <div class="content">
         <h3>hi, <span>user</span></h3>
-        <h1>welcome <span><?php echo $_SESSION['admin_name']  ?></span> </h1>
+        <h1>welcome <span><?php echo $_SESSION['user_name']  ?></span> </h1>
         <p>You have been successfully logged in</p>
-        <a href="login.php" class="btn">login</a>
-        <a href="signup.php" class="btn">signup</a>
+        <a href="index.php" class="btn">home</a>
         <a href="logout.php" class="btn">logout</a>
         
     </div>

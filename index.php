@@ -1,3 +1,19 @@
+<?php
+    session_start();
+    if(isset($_SESSION['admin_name'])){}
+    else if(isset($_SESSION['user_name'])){}
+    else{
+        ?>
+        <script>
+            alert("You are not logged in");
+        </script>
+        <?php
+
+        header("location:login.php");
+    }
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,7 +46,7 @@
               <li ><a href="findtuition.html"target="_blank">Find Tuition</a></li>
               <li ><a href="tutorRegistration.html" target="_blank">Tutor Registration</a></li>
               <li ><a href="login.php" target="_blank">Log In</a></li>
-              <li ><a href="#" target="_blank">Log Out</a></li>
+              <li ><a href="logout.php">Log Out</a></li>
           </ul>
       </div>
 
