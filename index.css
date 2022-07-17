@@ -8,41 +8,113 @@ body{
     overflow: hidden;
 }
 
-ul{
+
+.titlebar{
+    background-color:darkgrey;
+    height: 80px;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+}
+.titlebar ul li{
+    position: absolute;
+    right: 2%;
+    display: inline-block;
+    list-style: none;
+    margin-top: 10px;
+}
+.titlebar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.b1{
+    margin-right: 100px;
+    color:white;
+    margin-top: 0;
+    width: 110px;
+    height: 42px;
+    background-color:rgb(43, 4, 80);
+    font-weight: bold;
+    border-radius: 5%;
+    font-size: 18px;
+    padding: 5px;
+    overflow: hidden;
+
+}
+
+.b2
+{
+    margin-top: 0px;
+    width: 110px;
+    height: 42px;
+    font-weight: bold;
+    border-radius: 5%;
+    font-size: 18px;
+    padding: 5px;
+    background-color:rgb(43, 4, 80);
+}
+
+ul li .b1:hover{
+    background-color: rgb(140, 12, 226);
+}
+.titlebar ul li .b2:hover{
+    background-color: rgb(140, 12, 226);
+}
+.titlebar h1{
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size:50px;
+    color:rgb(255, 255, 255);
+}
+.menu{
+    padding: 10px 0px;
+    width:100%;
+    background-color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.menu ul{
     margin:0;padding:0;list-style: none;
     text-align:center;
+    width:100%;
 }
-li{
+.menu ul li{
     display: inline-block;
     margin-right: 0px;
     position: relative;
+    width:fit-content;
+    font-style: italic;
+    font-size:150%;
 }
 
-a{
-    background: rgb(67, 226, 43);
+.menu a{
+    background:rgb(33, 230, 119);
     color:rgb(8, 8, 8);
     padding: 10px 25px;
     display: block;
     text-decoration: none;
     border-radius: 5px;
 }
-a:hover{
+.menu a:hover{
     background: rgb(249, 251, 251);
 }
 
-ul ul{
-    position:absolute; left: -99999px; top:37px; width: 200px;
+.menu ul ul{
+    position:absolute; left: -99999px; top:37px; 
     text-align: left;
 }
-ul ul a{
+.menu ul ul a{
+    width:200px;
     border-radius: 0;
-    background:#08b625;
+    background-color:#08b625;
     border-bottom: 1px solid rgb(254, 251, 251);
 }
-ul li:hover ul{
+.menu ul li:hover ul{
     left:0;
 }
-li li{
+.menu li li{
     display: block;
 }
 

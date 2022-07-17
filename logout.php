@@ -9,7 +9,7 @@ session_destroy();
 </script>
 
 <?php
-header('location:login.php');
+header('location:index.php');
 ?>
 <script>
     alert("You have been successfully logged out!");
