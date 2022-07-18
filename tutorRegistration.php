@@ -1,3 +1,8 @@
+<?php
+    session_start();
+    
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,10 +19,34 @@
         <form action="regconfirmed.php" method="post" target="_blank" >
             <label>নাম</label>
             <input type="varchar" name="teachername"
-            placeholder="Enter Your Name" required>
+            <?php 
+                if(isset($_SESSION['name'])){ 
+                    ?>
+                        value=<?php echo $_SESSION['name'] ?>
+                    <?php
+                }
+                else{ 
+                    ?>
+                        placeholder="Enter Your Name"
+                    <?php
+                }
+            ?>
+           required>
             <label>ইমেইল</label>
             <input type="email" name="email"
-            placeholder="Please enter your email" required>
+            <?php 
+                if(isset($_SESSION['email'])){ 
+                    ?>
+                        value=<?php echo $_SESSION['email'] ?>
+                    <?php
+                }
+                else{ 
+                    ?>
+                        placeholder="Please Enter Your Email"
+                    <?php
+                }
+            ?>
+             required>
             <label>মোবাইল নম্বর</label>
             <input type="varchar" name="phone"
             placeholder="Enter your phone no" required>

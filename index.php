@@ -68,7 +68,7 @@
             }
             else{
             ?>
-               <a href="tutorRegistration.html" target="_blank">Tutor Registration</a>
+               <a href="tutorRegistration.php" target="_blank">Tutor Registration</a>
             <?php
             }
             ?>
@@ -76,6 +76,49 @@
     </ul>
 
   </div>
+  <div class="main" style="min-height:50%;margin-bottom:50px">
+        <h1 style="color:yellow">আপনি কি গৃহশিক্ষক / শিক্ষিকা খুঁজছেন? </h1>
+       <h2 style="color:yellow;margin-bottom:100px">
+       গৃহশিক্ষক বিষয়ক যেকোনো প্রয়োজনে যোগাযোগ করুন 
+       <b style="font-size:40px;">০১৫২০০০০০০০ </b>নম্বরে। 
+        </h2>
+        <h1 style="color:white;">How It Works:</h1>
+        <h3>
+            ১) টিউশন পেতে হলে অবশ্যই আমাদের ওয়েবসাইটে রেজিস্ট্রেশন ১০০% সম্পন্ন করতে হবে।
+        </h3>  
+        <h3>  
+            ২) অভিভাবকের সাথে স্বাক্ষাৎ করে টিউশন নিশ্চিত হলে আপনাকে ২ কিস্তিতে শুধুমাত্র প্রথম মাসের বেতনের ৭০% মিডিয়া ফি দিতে হবে, দ্বিতীয় মাস থেকে আমাদের কে আর কোন ফি দিতে হবে না। স্বাক্ষাতের দিন ৩৫% এবং জয়েন করার ৭দিন পর বাকি ৩৫% ফি দিতে হবে।
+        </h3>
+        <h3>
+            ৩)প্রথম মাসের স্যালারি পাওয়ার আগে টিউশন চলে সম্পূর্ণ মিডিয়া ফি ফেরত দেওয়া হবে।
+        </h3>
+        <h3>
+            ৪)প্রথম মাসের বেতন পাওয়ার পর টিউশন চলে গেলে সম্পূর্ণ ফি ফেরত দেওয়া হবে,তবে আপনাকে যে বেতন দেওয়া হবে সেটার অর্ধেক মিডিয়া পাবে।
+        </h3>
+        <h3>
+            ৫)আপনার ব্যক্তিগত কারনে টিউশন ছেড়ে দিলে বা চলে গেলে কো মিডিয়া ফি ফেরত দেওয়া হবে না।
+        </h3>
+       
+  </div>
+
+
+  <footer >
+        <h3>Tuition Media-A reliable home tutor provider</h3>
+        <div class="aboutus">
+             <h2>About us</h2>
+             <p>Tuitionmedia is one of the largest tuition media in Bangladesh.
+                 Which aims to provide tuition to people who are searching for tuition.
+                We have an objective to provide highly qualified teachers To those who can't find 
+                the appropriate teachers. We have large number of tutors from different
+                 university and different subjects
+            </p>
+        </div>
+        <div class="Contact with us">
+            <h2>Contact with us</h2>
+            <p>Need any support? Call to <b style="font-size: 20px; color: green;">01521500000</b> 
+            .<br>or email us <b style="font-size: 20px; color: green;">tuitionmedia@gmail.com</b>.</p>
+        </div>
+  </footer>
   
 
 

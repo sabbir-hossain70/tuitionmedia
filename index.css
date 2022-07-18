@@ -5,7 +5,7 @@ body{
     font-family: montserrat;
     background: linear-gradient(120deg,#2980b9,#8e44ad);
     height:100vh;
-    overflow: hidden;
+    width:100%;
 }
 
 
@@ -122,3 +122,36 @@ ul li .b1:hover{
     color:rgb(228, 239, 239);
 }
 
+.main{
+    min-height:70vh;
+}
+
+
+
+
+footer{
+    padding-top: 0.2%;
+    
+    background-color: rgb(43, 4, 80);
+    width: 100%;
+    height: 250px;
+    color:rgb(229, 221, 221);
+}
+
+footer h3{
+    text-align:center;
+    color: ghostwhite;
+}
+footer h2{
+    color:aliceblue;
+    margin-top: -5px;
+    margin-left:2%;
+}
+footer p{
+    margin-top: -20px;
+    margin-left:2%;
+    margin-right: 2%;
+}
+ h1{
+    color:rgb(223, 218, 224);
+}

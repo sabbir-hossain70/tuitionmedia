@@ -27,11 +27,21 @@ if(isset($_POST['submit'])){
     if(mysqli_num_rows($result1)>0){
        $row=mysqli_fetch_array($result1);
        $_SESSION['admin_name']=$row['name'];
+       $_SESSION['email']=$row['email'];
+       $_SESSION['name']=$row['name'];
+
+       $cookie_name = "user";
+       $cookie_value = $row['name'];
+       setcookie($cookie_name,$cookie_value,time()+10,"/");
+
        header('location:admin_page.php');
     }
     elseif(mysqli_num_rows($result2)>0){
         $row=mysqli_fetch_array($result2);
         $_SESSION['user_name']=$row['name'];
+        $_SESSION['email']=$row['email'];
+        $_SESSION['name']=$row['name'];
+        
         header('location:user_page.php');
      }else{
         $error[]='incorrect email or password';
