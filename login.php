@@ -1,8 +1,18 @@
 <?php
 
 @include 'config.php';
-session_start();
 $conn= mysqli_connect('localhost','root','','tuition_media'); 
+session_start();
+if(isset($_SESSION["signedup"])&& $_SESSION["signedup"]=="true"){
+    $_SESSION["signedup"]=false;
+    echo $_SESSION["signedup"];
+    ?>
+    <script>
+    alert("You have been signed up successfully..log in now");
+    </script>
+    <?php
+
+}
 if(isset($_POST['submit'])){
     
     $email=mysqli_real_escape_string($conn,$_POST['email']);

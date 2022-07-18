@@ -72,7 +72,6 @@ ul li .b1:hover{
     width:100%;
     background-color: black;
     font-weight: bold;
-    font-size: 15px;
 }
 
 .menu ul{
@@ -106,7 +105,7 @@ ul li .b1:hover{
     text-align: left;
 }
 .menu ul ul a{
-    width:200px;
+    width:100px;
     border-radius: 0;
     background-color:#08b625;
     border-bottom: 1px solid rgb(254, 251, 251);
@@ -116,5 +115,10 @@ ul li .b1:hover{
 }
 .menu li li{
     display: block;
+}
+
+.cls{
+    font-size:10px;
+    color:rgb(228, 239, 239);
 }
 

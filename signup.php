@@ -1,5 +1,6 @@
 <?php
 @include 'config.php';
+session_start();
 $conn= mysqli_connect('localhost','root','','tuition_media'); 
 if(isset($_POST['submit'])){
     $name=mysqli_real_escape_string($conn,$_POST['name']);
@@ -20,14 +21,12 @@ if(isset($_POST['submit'])){
             $insert= "INSERT INTO users (name,email,password) VALUES('$name','$email','$password')";
            
             mysqli_query($conn,$insert);
+            $_SESSION["signedup"]="true";
             header('location:login.php');
         }
     }
 }
 ?>
-
-
-
 
 
 <!DOCTYPE html>

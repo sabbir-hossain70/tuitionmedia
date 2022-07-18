@@ -7,8 +7,6 @@ if(!isset($_SESSION['user_name'])){
 ?>
 
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,7 +24,7 @@ if(!isset($_SESSION['user_name'])){
         <p>You have been successfully logged in</p>
         <a href="index.php" class="btn">home</a>
         <a href="logout.php" class="btn">logout</a>
-        
+
     </div>
 </div>
 
