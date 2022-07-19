@@ -18,7 +18,7 @@
             <th>SUBJECTS</th>
             <th>PHONE NO</th>
             <?php
-            $sql="SELECT tname,subjects,phone FROM teachers WHERE classes='11to12';";
+            $sql="SELECT tname,subjects,phone FROM teachers WHERE tclass='11to12';";
             $query=mysqli_query($conn,$sql);
             while($info=mysqli_fetch_array($query)){
                 ?>

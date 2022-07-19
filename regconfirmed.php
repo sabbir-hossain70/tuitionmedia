@@ -18,8 +18,8 @@ if ($conn->connect_error) {
 }
 
 
-$sql = "INSERT INTO teachers (tname,email,phone,subjects,classes)
-VALUES ('$teachername','$email','$phone','$subjects','$classes');";
+$sql = "INSERT INTO teachers (tname,email,phone,tclass,subjects)
+VALUES ('$teachername','$email','$phone','$classes','$subjects');";
 
 
 $check=mysqli_query($conn,$sql);
