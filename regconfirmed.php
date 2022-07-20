@@ -25,7 +25,6 @@ VALUES ('$teachername','$email','$phone','$classes','$subjects');";
 $check=mysqli_query($conn,$sql);
 
 if ($check) {
-    echo "New record created successfully<br>";
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
@@ -39,12 +38,14 @@ $conn->close();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title></head>
-    <body>
-    Welcome <?php echo $_POST["teachername"]; ?><br>
-    Your email address is: <?php echo $_POST["email"]; ?><br>
-    Your phone no is: <?php echo $_POST["phone"]; ?><br>
+    <title>Registration confirmation</title>
+    <link rel="stylesheet" href="regconfirmed.css">
+</head>
+    <body style="background-color:aliceblue;">
+    <h1>Welcome <?php echo $_POST["teachername"]; ?> </h1><br>
+    <h2>Your email address is: <?php echo $_POST["email"]; ?><br><h2>
+    <h2>Your phone no is: <?php echo $_POST["phone"]; ?><h2><br>
 
-    You have been successfully registered as a teacher.
+    <h1>You have been successfully registered as a teacher.<h1>
     </body>
 </html>

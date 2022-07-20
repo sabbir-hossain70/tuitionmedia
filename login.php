@@ -42,7 +42,7 @@ if(isset($_POST['submit'])){
         $_SESSION['email']=$row['email'];
         $_SESSION['name']=$row['name'];
         
-        header('location:user_page.php');
+        header('location:index.php');
      }else{
         $error[]='incorrect email or password';
      }
